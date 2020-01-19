@@ -34,7 +34,7 @@ set(I3IPCpp_LIBRARIES
 # set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O2")
 
 file(GLOB_RECURSE SRC src/*.cpp)
-add_library(i3ipc++ ${SRC})
+add_library(i3ipc++ STATIC ${SRC})
 
 target_include_directories(i3ipc++
 	PUBLIC
